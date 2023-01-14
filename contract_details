@@ -1,0 +1,16 @@
+ 1_initial_migration.js
+    Deploying 'Migrations' 
+    > transaction hash:    0xd921b9f7083007ad253b98cb0f94b7774287f859e01357e8ec246a13d729e923
+    > contract address:    0xf21eeA8028FB64F676BA2Fb1Ca7dBbaCE36707Ef 
+    > account:             0xB147065AeA4B9b3887A68776c057150501e06702 
+    
+ 2_deploy_contracts.js
+    Deploying 'Token'
+    > transaction hash:    0xc00d7fb9be4e2912bfce893689769a8e5b93eb6de3ef22581d5ad691df89be95
+    > contract address:    0x1F240369a96F9Aa621cc90082E23f1eD897Dc827
+    > account:             0xB147065AeA4B9b3887A68776c057150501e06702
+
+    Deploying 'Exchange'
+   > transaction hash:    0xe062bd8d810e710756e1b782a6f9ea5bc030a54433de5cd4a0dbe9ab17d21560
+   > contract address:    0xa909F3398bA7D21DdeD948506832c7C38f3A0646
+   > account:             0xB147065AeA4B9b3887A68776c057150501e06702

@@ -6,7 +6,7 @@ class Navbar extends Component {
   render() {
     return (
       <nav className="navbar navbar-expand-lg navbar-dark bg-secondary">
-        <a className="navbar-brand" href="#/">Token Exchange</a>
+        <a className="navbar-brand" href="#/"> Welcom to Token Exchange Platform ETH to RCT (ROYAL CHANDAN TOKEN)</a>
         <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
           <span className="navbar-toggler-icon"></span>
         </button>

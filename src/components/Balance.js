@@ -47,10 +47,10 @@ const showForm = (props) => {
     tokenWithdrawAmount
   } = props
 
-  return(
-    
+  return (
+
     <Tabs defaultActiveKey="deposit" className="bg-dark text-white">
-      
+
       <Tab eventKey="deposit" title="Deposit" className="bg-dark">
         <table className="table table-dark table-sm small">
           <thead>
@@ -75,11 +75,11 @@ const showForm = (props) => {
         }}>
           <div className="col-12 col-sm pr-sm-2">
             <input
-            type="text"
-            placeholder="ETH Amount"
-            onChange={(e) => dispatch( etherDepositAmountChanged(e.target.value) ) }
-            className="form-control form-control-sm bg-dark text-white"
-            required />
+              type="text"
+              placeholder="ETH Amount"
+              onChange={(e) => dispatch(etherDepositAmountChanged(e.target.value))}
+              className="form-control form-control-sm bg-dark text-white"
+              required />
           </div>
           <div className="col-12 col-sm-auto pl-sm-0">
             <button type="submit" className="btn btn-primary btn-block btn-sm">Deposit</button>
@@ -89,7 +89,7 @@ const showForm = (props) => {
         <table className="table table-dark table-sm small">
           <tbody>
             <tr>
-              <td>N-F-T</td>
+              <td>RCT</td>
               <td>{tokenBalance}</td>
               <td>{exchangeTokenBalance}</td>
             </tr>
@@ -102,11 +102,11 @@ const showForm = (props) => {
         }}>
           <div className="col-12 col-sm pr-sm-2">
             <input
-            type="text"
-            placeholder="N-F-T Amount"
-            onChange={(e) => dispatch( tokenDepositAmountChanged(e.target.value) )}
-            className="form-control form-control-sm bg-dark text-white"
-            required />
+              type="text"
+              placeholder="RCT Amount"
+              onChange={(e) => dispatch(tokenDepositAmountChanged(e.target.value))}
+              className="form-control form-control-sm bg-dark text-white"
+              required />
           </div>
           <div className="col-12 col-sm-auto pl-sm-0">
             <button type="submit" className="btn btn-primary btn-block btn-sm">Deposit</button>
@@ -140,11 +140,11 @@ const showForm = (props) => {
         }}>
           <div className="col-12 col-sm pr-sm-2">
             <input
-            type="text"
-            placeholder="ETH Amount"
-            onChange={(e) => dispatch( etherWithdrawAmountChanged(e.target.value) )}
-            className="form-control form-control-sm bg-dark text-white"
-            required />
+              type="text"
+              placeholder="ETH Amount"
+              onChange={(e) => dispatch(etherWithdrawAmountChanged(e.target.value))}
+              className="form-control form-control-sm bg-dark text-white"
+              required />
           </div>
           <div className="col-12 col-sm-auto pl-sm-0">
             <button type="submit" className="btn btn-primary btn-block btn-sm">Withdraw</button>
@@ -154,7 +154,7 @@ const showForm = (props) => {
         <table className="table table-dark table-sm small">
           <tbody>
             <tr>
-              <td>N-F-T</td>
+              <td>RCT</td>
               <td>{tokenBalance}</td>
               <td>{exchangeTokenBalance}</td>
             </tr>
@@ -167,11 +167,11 @@ const showForm = (props) => {
         }}>
           <div className="col-12 col-sm pr-sm-2">
             <input
-            type="text"
-            placeholder="N-F-T Amount"
-            onChange={(e) => dispatch( tokenWithdrawAmountChanged(e.target.value) )}
-            className="form-control form-control-sm bg-dark text-white"
-            required />
+              type="text"
+              placeholder="N-F-T Amount"
+              onChange={(e) => dispatch(tokenWithdrawAmountChanged(e.target.value))}
+              className="form-control form-control-sm bg-dark text-white"
+              required />
           </div>
           <div className="col-12 col-sm-auto pl-sm-0">
             <button type="submit" className="btn btn-primary btn-block btn-sm">Withdraw</button>

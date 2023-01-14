@@ -10,19 +10,19 @@ import {
 
 const priceSymbol = (lastPriceChange) => {
   let output
-  if(lastPriceChange === '+') {
+  if (lastPriceChange === '+') {
     output = <span className="text-success">&#9650;</span> // Green up tiangle
   } else {
     output = <span className="text-danger">&#9660;</span> // Red down triangle
   }
-  return(output)
+  return (output)
 }
 
 const showPriceChart = (priceChart) => {
-  return(
+  return (
     <div className="price-chart">
       <div className="price">
-        <h4>N-F-T/ETH &nbsp; {priceSymbol(priceChart.lastPriceChange)} &nbsp; {priceChart.lastPrice}</h4>
+        <h4>RCT/ ETH &nbsp; {priceSymbol(priceChart.lastPriceChange)} &nbsp; {priceChart.lastPrice}</h4>
       </div>
       <Chart options={chartOptions} series={priceChart.series} type='candlestick' width='100%' height='100%' />
     </div>

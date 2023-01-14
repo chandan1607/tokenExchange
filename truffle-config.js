@@ -12,7 +12,7 @@ module.exports = {
       network_id: "*" // Match any network id
     },
     kovan: {
-      provider: function() {
+      provider: function () {
         return new HDWalletProvider(
           privateKeys.split(','), // Array of account private keys
           `https://kovan.infura.io/v3/Qmxx1XHdVeunvE5Qa3iFuXvVV-_7lvlU`// Url to an Ethereum Node
@@ -23,23 +23,23 @@ module.exports = {
       network_id: 42
     },
     goerli: {
-      provider: function() {
+      provider: function () {
         return new HDWalletProvider(
           privateKeys.split(','), // Array of account private keys
-          `https://eth-goerli.g.alchemy.com/v2/${process.env.INFURA_API_KEY}`// Url to an Ethereum Node
+          `https://goerli.infura.io/v3/${process.env.INFURA_API_KEY}`// Url to an Ethereum Node
         )
       },
       network_id: 5,       // Goerli's id
       confirmations: 2,    // # of confirmations to wait between deployments. (default: 0)
       timeoutBlocks: 200,  // # of blocks before a deployment times out  (minimum/default: 50)
-      skipDryRun: true ,    // Skip dry run before migrations? (default: false for public nets )
-      
+      skipDryRun: true,    // Skip dry run before migrations? (default: false for public nets )
+
       gas: 4465030,
       gasPrice: 10000000000,
       networkCheckTimeout: 1000000000
     },
     ropsten: {
-      provider: function() {
+      provider: function () {
         return new HDWalletProvider(
           privateKeys.split(','), // Array of account private keys
           `wss://ropsten.infura.io/ws/v3/$4f0de208a9204152930293e59ae7c196`// Url to an Ethereum Node
@@ -50,7 +50,7 @@ module.exports = {
       confirmations: 2,    // # of confs to wait between deployments. (default: 0)
       timeoutBlocks: 200,  // # of blocks before a deployment times out  (minimum/default: 50)
       skipDryRun: true     // Skip dry run before migrations? (default: false for public nets )
-      },
+    },
 
   },
   contracts_directory: './src/contracts/',

@@ -14,7 +14,7 @@ import { fillOrder } from '../store/interactions'
 const renderOrder = (order, props) => {
   const { dispatch, exchange, account } = props
 
-  return(
+  return (
     <OverlayTrigger
       key={order.id}
       placement='auto'
@@ -40,12 +40,12 @@ const renderOrder = (order, props) => {
 const showOrderBook = (props) => {
   const { orderBook } = props
 
-  return(
+  return (
     <tbody>
       {orderBook.sellOrders.map((order) => renderOrder(order, props))}
       <tr>
-        <th>N-F-T</th>
-        <th>N-F-T/ETH</th>
+        <th>RCT</th>
+        <th>RCT/ ETH</th>
         <th>ETH</th>
       </tr>
       {orderBook.buyOrders.map((order) => renderOrder(order, props))}
@@ -63,7 +63,7 @@ class OrderBook extends Component {
           </div>
           <div className="card-body order-book">
             <table className="table table-dark table-sm small">
-              { this.props.showOrderBook ? showOrderBook(this.props) : <Spinner type='table' /> }
+              {this.props.showOrderBook ? showOrderBook(this.props) : <Spinner type='table' />}
             </table>
           </div>
         </div>
