@@ -18,6 +18,7 @@ const priceSymbol = (lastPriceChange) => {
   return (output)
 }
 
+
 const showPriceChart = (priceChart) => {
   return (
     <div className="price-chart">
