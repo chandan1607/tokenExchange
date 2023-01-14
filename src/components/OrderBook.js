@@ -37,6 +37,7 @@ const renderOrder = (order, props) => {
   )
 }
 
+
 const showOrderBook = (props) => {
   const { orderBook } = props
 
