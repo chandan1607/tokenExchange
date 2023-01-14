@@ -1,4 +1,5 @@
 export const chartOptions = {
+
   chart: {
     animations: { enabled: false },
     toolbar: { show: false },
@@ -12,9 +13,9 @@ export const chartOptions = {
       fontFamily: undefined
     },
     x: {
-        show: false,
-        format: 'dd MMM',
-        formatter: undefined,
+      show: false,
+      format: 'dd MMM',
+      formatter: undefined,
     },
     y: {
       show: true,
@@ -24,13 +25,13 @@ export const chartOptions = {
       show: false,
     },
     items: {
-       display: 'flex',
+      display: 'flex',
     },
     fixed: {
-        enabled: false,
-        position: 'topRight',
-        offsetX: 0,
-        offsetY: 0,
+      enabled: false,
+      position: 'topRight',
+      offsetX: 0,
+      offsetY: 0,
     },
   },
   xaxis: {
@@ -38,9 +39,9 @@ export const chartOptions = {
     labels: {
       show: true,
       style: {
-          colors: '#fff',
-          fontSize: '8px',
-          cssClass: 'apexcharts-xaxis-label',
+        colors: '#fff',
+        fontSize: '8px',
+        cssClass: 'apexcharts-xaxis-label',
       },
     },
   },
